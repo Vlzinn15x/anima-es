@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+    margin: 0%;
+    background-color: #f0f0f093;
+}
+.bola{
+    width: 100px;
+    height: 100px;
+    background-color: #4cf802;
+    border-radius: 50%;
+    position: relative;
+    animation: pular 1s infinite alternate ease-in-out;
+}
+@keyframes pular {
+    0%{
+        bottom: 0px;
+        box-shadow: 0px 0px 0px 0px #3498db66;
+    }
+    100%{
+        bottom: 200px;
+        box-shadow: 0px 20px 20px 0px #3498db33;
+    }
+}
